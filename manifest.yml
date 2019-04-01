@@ -1,0 +1,12 @@
+applications:
+- name: pal-tracker
+  path: build/libs/pal-tracker.jar
+  routes:
+    route: pal-tracker-psa.apps.evans.pal.pivotal.io
+  disk_quota: 1G
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{jre: {version: 11.+} }'
+    WELCOME_MESSAGE: Hello from Cloud Foundry from review environment
+  instances: 1
+  memory: 1G
+  stack: cflinuxfs2
