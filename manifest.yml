@@ -7,7 +7,6 @@ applications:
   instances: 1
   memory: 1G
   routes:
-  - route: pal-tracker-grateful-chipmunk.apps.evans.pal.pivotal.io
-  - route: pal-tracker-psa.apps.evans.pal.pivotal.io
+  - route: pal-tracker-psa1.apps.evans.pal.pivotal.io
   stack: cflinuxfs2
   path: ./build/libs/pal-tracker.jar
